@@ -5,7 +5,7 @@ let lastFetchTime = 0; // Timestamp to track the last fetch time
 async function fetchDataFromSheet() {
   const sheetID = '12Uv47AZc5e0VqkYuq_Pu5rGHTf2Z-qty-pKOlvQcv9w'; // Replace with your actual Sheet ID
   const range = 'data!A1:E11'; // Adjust the range as per your sheet layout
-  const apiKey = 'AIzaSyABEvZcpC1TWyzk6UkOjusxQTLShRxzzJg'; // Replace with your API key
+
   const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetID}/values/${range}?key=${apiKey}`;
 
   const response = await fetch(url);
